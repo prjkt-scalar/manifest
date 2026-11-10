@@ -1,36 +1,31 @@
-LineageOS
-===========
+<p align="center">
+  <img src="assets/scalar.png" alt="Scalar" width="100%">
+</p>
+
+Scalar is an Android 17 ROM based on LineageOS 24, with light customization on top.
 
 Getting started
 ---------------
 
-To get started with Android/LineageOS, you'll need to get familiar with [Source Control Tools](https://source.android.com/setup/develop).
+If you are new to building Android, read about the [Source Control Tools](https://source.android.com/setup/develop) first.
 
-To initialize your local repository using the LineageOS trees, use a command like this:
+Initialize the source tree:
 ```
-repo init -u https://github.com/LineageOS/android.git -b lineage-24.0 --git-lfs
+repo init -u https://github.com/prjkt-scalar/manifest -b 17 --git-lfs
 ```
-Then to sync up:
+Then sync:
 ```
 repo sync
 ```
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
+Build steps per device are the same as LineageOS, see the [LineageOS Wiki](https://wiki.lineageos.org/).
 
+Contributing
+------------
 
-Submitting patches
-------------------
-Patches are always welcome! Please submit your patches via LineageOS Gerrit!
+Send pull requests to the relevant repository in [prjkt-scalar](https://github.com/prjkt-scalar).
+Changes that belong in LineageOS should go to [LineageOS Gerrit](https://review.lineageos.org/) instead.
 
-Simply follow our guide on [how to submit patches](https://wiki.lineageos.org/submitting-patch-howto.html).
+Credits
+-------
 
-To view the status of your and others' patches, visit [LineageOS Gerrit Code Review](https://review.lineageos.org/).
-
-
-Buildbot
---------
-
-All supported devices are built weekly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [LineageOS Buildkite](https://buildkite.com/lineageos).
-
-Builds produced weekly by the buildbot can be downloaded from [LineageOS downloads](https://download.lineageos.org/).
+[LineageOS](https://github.com/LineageOS) and [AOSP](https://source.android.com/).
